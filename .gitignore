@@ -19,3 +19,5 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+tangibly/android/app/google-services.json
+tangibly/ios/Runner/GoogleService-Info.plist
