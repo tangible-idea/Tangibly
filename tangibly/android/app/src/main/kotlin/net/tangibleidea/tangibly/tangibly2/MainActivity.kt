@@ -1,4 +1,4 @@
-package com.example.tangibly
+package net.tangibleidea.tangibly
 
 import io.flutter.embedding.android.FlutterActivity
 
