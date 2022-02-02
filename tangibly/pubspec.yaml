@@ -1,0 +1,69 @@
+name: tangibly
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0<3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+#icon and fonts
+  font_awesome_flutter:
+  flutter_feather_icons: ^2.0.0+1
+  cupertino_icons: ^1.0.3
+  google_fonts: ^2.1.0
+  material_design_icons_flutter: 5.0.5955-rc.1
+
+#controlls
+  group_button: ^3.3.1
+
+  #datetime picker/formatter
+  intl: ^0.17.0
+  day_picker: ^2.0.0
+  day_night_time_picker: ^1.0.3+1
+
+  animated_text_kit: ^4.2.1
+  flutter_svg: ^0.22.0
+  fl_chart: ^0.36.1
+  #provider: ^5.0.0
+  data_table_2: ^2.0.3
+  shimmer: ^2.0.0
+  table_calendar: ^3.0.1
+  #dart_json_mapper:
+  #iamport_flutter: ^0.10.0-dev.2
+  get:
+
+  # navbar
+  curved_navigation_bar: ^1.0.1
+
+  # web URL
+  url_launcher: ^6.0.13
+
+  # Firebase
+  firebase_core : ^1.10.0
+  firebase_auth: ^3.2.0
+  cloud_firestore: ^3.1.0
+  firebase_storage: ^10.1.0
+
+  # image upload
+  image_picker: ^0.8.4+4
+
+
+  #social login
+  google_sign_in: ^5.2.1
+  http: ^0.13.3
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/logo.png
+    - assets/images/man-head.png
+    - assets/icons/
