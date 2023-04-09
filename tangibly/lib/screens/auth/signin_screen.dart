@@ -40,7 +40,7 @@ class _SignInScreenState extends State<SignInScreen> {
         return false;
       }
       if(email.isEmail == false) {
-        Get.defaultDialog(title: "⚠️", content: Text("Pelase enter a valid email format."));
+        Get.defaultDialog(title: "⚠️", content: Text("Please enter a valid email format."));
         hasVerificationError= true;
         return false;
       }

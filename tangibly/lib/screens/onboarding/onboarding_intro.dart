@@ -157,15 +157,15 @@ class _OnBoardingIntroState extends State<OnBoardingIntro> {
                     SliderCaptionedImage(
                         index: 0,
                         imageUrl: "assets/images/slider-background-1.png",
-                        caption: "Study\nAnywhere\nEasily"),
+                        caption: "Study\nAnywhere\nEasy"),
                     SliderCaptionedImage(
                         index: 1,
                         imageUrl: "assets/images/slider-background-2.png",
-                        caption: "Manage\nYour Classes\nOn Phone"),
+                        caption: "Manage\nYour Classes\nAnytime"),
                     SliderCaptionedImage(
                         index: 2,
                         imageUrl: "assets/images/slider-background-3.png",
-                        caption: "Get\nSystematic\nFeedback")
+                        caption: "Get\nSystematic\nFeedbacks")
                   ])),
           Padding(
             padding: EdgeInsets.only(left: 20.0, right: 20.0, bottom: 20.0),
@@ -189,7 +189,7 @@ class _OnBoardingIntroState extends State<OnBoardingIntro> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.email, color: Colors.white),
-                        Text('\t Continue with Email',
+                        Text('\t Continue with your Email',
                             style: GoogleFonts.lato(
                                 fontSize: 20, color: Colors.white)),
                       ],
