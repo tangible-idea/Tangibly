@@ -24,8 +24,8 @@ class GetXList extends GetxController {
       if (querySnapshot.docs.isNotEmpty) {
         querySnapshot.docs
             .where((x) =>
-        ((x['dateTime'] as Timestamp).toDate()).isAfter(begin)  &&
-            ((x['dateTime'] as Timestamp).toDate()).isBefore(end) &&
+        ((x['dateTime']).toDate()).isAfter(begin)  &&
+            ((x['dateTime']).toDate()).isBefore(end) &&
             x['assignedTeacher'].toString() == teacherID
         )
             .forEach((i) {
@@ -34,7 +34,7 @@ class GetXList extends GetxController {
               i['assignedTeacher'],
               i['assignedStudent'],
               EClassStat.TODO,
-              ((i['dateTime'] as Timestamp).toDate())
+              ((i['dateTime']).toDate())
           ));
           // 날짜로 가까운 클래스 먼저보이도록 소팅.
           classes.sort((x,y) => x.dateTime.compareTo(y.dateTime));

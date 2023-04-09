@@ -17,7 +17,7 @@ import 'package:tangibly/widgets/forms/form_input_with%20_label.dart';
 
 // getx
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/snackbar/snack.dart';
+//import 'package:get/get_navigation/src/snackbar/snack.dart';
 
 
 class SignupScreen extends StatefulWidget {

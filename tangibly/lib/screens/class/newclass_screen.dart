@@ -199,7 +199,7 @@ class NewClassScreen extends StatelessWidget {
                           context: context,
                           value: _assign.getTime,
                           onChange: onTimeChanged,
-                          minuteInterval: MinuteInterval.FIVE,
+                          minuteInterval: TimePickerInterval.FIVE,
                           disableHour: false,
                           disableMinute: false,
                           minMinute: 0,
