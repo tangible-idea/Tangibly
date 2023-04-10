@@ -10,12 +10,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:tangibly/services/auth.dart';
 import 'package:tangibly/services/fs.dart';
-
-//import 'package:dart_json_mapper/dart_json_mapper.dart';
-//import 'main.mapper.g.dart' show initializeJsonMapper;
-//import 'package:dart_json_mapper/dart_json_mapper.dart';
 import 'constants.dart';
-//import 'main.mapper.g.dart';
 
 void main() async {
   //initializeJsonMapper();

@@ -18,10 +18,6 @@ const defaultPadding = 16.0;
 
 // Radius
 const R30= BorderRadius.all(Radius.circular(30));
-// const R30_Material= RoundedRectangleBorder(
-//                     borderRadius: R30,
-//                     side: BorderSide(color: outlinedButtonBorderColor)
-//                 );
 
 // from flash
 const kSendButtonTextStyle = TextStyle(
@@ -31,8 +27,6 @@ const kSendButtonTextStyle = TextStyle(
 );
 
 const kBottomSheetBackground = BoxDecoration(
-  //color: const Color(0xFF1D192D)
-  //color: const Color(0xFF181a1f)
   gradient: RadialGradient(colors: AppColors.bottomSheetGradientColor)
 );
 

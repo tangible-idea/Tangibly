@@ -147,30 +147,6 @@ class FStore {
       res= false
     });
 
-    // await users
-    //     .add({
-    //   'uid': signedUser.uid,
-    //   'email': widget.email,
-    //   'name': _nameController.text,
-    //   'signupVia': 'email',
-    //   'type': _isTeacherTrigger.value? 'Teacher' : 'Student',
-    //   'profile_url': 'https://firebasestorage.googleapis.com/v0/b/tangibly-1f5ab.appspot.com/o/profile_pictures%2Favatar3.png?alt=media&token=79cd8278-2a28-407b-9334-819f8ddcab95'
-    // }
-    // )
-    //     .then((value) =>
-    // {
-    //   print("User Added"),
-    //   res= true
-    // })
-    //     .catchError((error) => {
-    //   Get.snackbar(
-    //       "Failed to add user",
-    //       error,
-    //       snackPosition: SnackPosition.BOTTOM),
-    //   res= false
-    // });
-    // Loading.done();
-
     return res;
   }
 
