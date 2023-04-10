@@ -123,15 +123,24 @@ class _SignInScreenState extends State<SignInScreen> {
                             onPressed: () async {
                               // 계정이 있는지 체크해서 있으면
                               if(hasAccount) {
-                                if(_passController.text.isNotEmpty) { // 계정있음+패스워드 입력완료
-                                  var signedUser = await _auth.signInWithEmailAndPassword(
-                                      _emailController.text,
-                                      _passController.text);
-                                  if(signedUser!.uid.isNotEmpty) { // 계정있음+로그인완
-                                    Get.offAll(HomeScreenMulti());
+                                try {
+                                  if (_passController.text
+                                      .isNotEmpty) { // 계정있음+패스워드 입력완료
+                                    var signedUser = await _auth
+                                        .signInWithEmailAndPassword(
+                                        _emailController.text,
+                                        _passController.text);
+                                    if (signedUser!.uid
+                                        .isNotEmpty) { // 계정있음+로그인완
+                                      Get.offAll(HomeScreenMulti());
+                                    }
+                                  } else { // 계정있음+패스워드없음.
+                                    Get.defaultDialog(content: Text(
+                                        'Please enter the password.'));
                                   }
-                                }else{ // 계정있음+패스워드없음.
-                                  Get.defaultDialog(content: Text('Please enter the password.'));
+                                }
+                                catch(ex) {
+                                  Get.defaultDialog(title: 'Error', content: Text('error on : $ex'));
                                 }
                               }
                               else { // 처음 계정 체크
